@@ -1,0 +1,80 @@
+#header{
+    display: flex;
+    position: sticky;
+    top: 61px;
+}
+
+#header>b{
+    min-width: 50px;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.row>div,.row>b{
+    overflow-y: auto;
+    min-width: 50px;
+    border: 1px solid grey;
+    padding: 5px;
+    height: 16px;
+
+}
+
+.row>b:first-child{
+    text-align: center;
+   vertical-align: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#menu{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+padding: 10px;
+gap: 20px;
+background-color: antiquewhite;
+}
+
+#option>#activecell{
+    background-color:aqua;
+}
+
+.options{
+    background-color: rgb(184, 197, 197);
+}
+
+
+#menu>input{
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+
+#body{
+ overflow-y: scroll;
+ position: relative;   
+}
+
+.row>b:first-child{
+    position: sticky;
+    left: 0;
+}
+
+#select>i{
+   
+    background-color: transparent;
+   
+}
+
+
+
+
+
+
+

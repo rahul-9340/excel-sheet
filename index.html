@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="option">
+
+<div id="menu">
+  
+  <div id="fontsize">
+    <i class="fa-solid fa-f"></i>
+    <select id="select">
+      <option value="12">12</option>
+      <option value="14">14</option>
+      <option value="16">16</option>
+      <option value="18">18</option>
+      <option value="20">20</option>
+    </select>
+  </div>
+
+
+
+
+
+
+<div id="bold" onclick="onclickbold(this)">   <i class="fa-solid fa-bold"></i></div>
+<div onclick="onclickitalic(this)" id="italic">  <i class="fa-solid fa-italic"></i></div>
+<div onclick="onclickunderline(this)" id="underline">  <i class="fa-solid fa-underline"></i></div>
+
+
+<div onclick="onclicktextalign(this)" data-value="start" class="textAlign">     <i class="fa-solid fa-align-left  "></i></div>
+<div onclick="onclicktextalign(this)" data-value="center" class="textAlign" >     <i class="fa-solid fa-align-center  "></i></div>
+<div onclick="onclicktextalign(this)" data-value="right" class="textAlign" >     <i class="fa-solid fa-align-right "></i></div>
+
+
+<label for="textcolor"><i class="fa-solid fa-font"></i> </label>
+<input type="color" onchange="textcolor(this)" id="textcolor" ></input>
+
+
+<label for="bgcolor"><i class="fa-solid fa-fill-drip"></i></label>
+<input type="color"  onchange="backgroundcolor(this)" id="bgcolor" > </input>
+</div>
+    <span id="activecell">NULL</span>
+</div>
+
+  <div id="header">
+<b>S.NO</b>
+  </div> 
+    
+  <section id="body">
+
+  </section>
+
+ 
+<script src="option.js"> </script>
+<script src="script.js"></script>
+</body>
+</html>
